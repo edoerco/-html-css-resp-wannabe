@@ -72,7 +72,12 @@ img {
   clear: both;
 }
 
+/* esercitazione */
 @media (max-width: 420px) {
+  body {
+    font-size: 12px;
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -112,7 +117,7 @@ img {
   #why .row>.second,
   #why .row>.third {
   margin-top: 20px;
-}
+  }
 
   img {
     height: 100px;
@@ -122,5 +127,75 @@ img {
     padding-top: 10px;
   }
   /* fine common */
-
 }
+/* fine esercitazione  */
+
+/* bonus */
+@media (min-width: 421px) and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Akaya Kanadaka', cursive;
+  }
+
+  #lezioni .row,
+  #why .row, 
+  #steps .row {
+  background-image: linear-gradient(to right,green 0%,white 40%,white 60%,red 100%);
+  width: 100%;
+  margin: 0;
+  padding: 0 10px;
+  }
+
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+  width: 100%;
+  float: none;
+  /* margin: 20px 0; */
+  }
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+  float: none;
+  width: 100%;
+  padding: 10px 0;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+  margin-top: 20px;
+  }
+
+  img {
+    height: 80px;
+    margin: 10px;
+  }
+
+  h1 {
+    padding: 10px 0;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: #0d5db9;
+  }
+
+  hr {
+    border: 3px solid #0d5db9;
+  }
+
+  #steps .row img,
+  #why .row img {
+    background-color: #0d5db9;
+    border-radius: 50%;
+    padding: 30px;
+    height: 100px;
+  }
+}
+
+
